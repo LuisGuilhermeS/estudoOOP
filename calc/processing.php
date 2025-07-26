@@ -1,8 +1,8 @@
 <?php
 class Calculadora{
 
-    private $value1;
-    private $value2;
+    public $value1;
+    public $value2;
 
 
 public function __construct($value1, $value2){
@@ -30,7 +30,7 @@ return $this->value1 / $this->value2;
 }
 }
 
-$resut = '';
+$result = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $value1 = $_POST['value1'];
