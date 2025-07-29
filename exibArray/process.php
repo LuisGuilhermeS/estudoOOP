@@ -1,5 +1,7 @@
 <?php
 
+
+
 $dados = [
     ['m', 'joao ribeiro'],
     ['f', 'ana silva'],
@@ -10,6 +12,15 @@ $dados = [
     ['f', 'daniela cardoso'],
     ['h', 'chinelo'],
 ];
+
+echo print_r($dados);
+header("content-type:application/json; charset=utf-8");
+
+$response['status'] = 'dados API is runinng!';
+$response['time_response'] = time();
+
+echo json_encode($response,JSON_UNESCAPED_UNICODE);
+
 
 class Humanos
 {
