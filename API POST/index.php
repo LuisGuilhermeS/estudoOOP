@@ -18,8 +18,4 @@ $response = curl_exec($curl);
 curl_close($curl);
 
 echo $response;
-
-
-// teste criação de API com seu method GET simples
 ?>
-

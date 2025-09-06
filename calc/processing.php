@@ -1,4 +1,12 @@
 <?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $value1 = $_POST['value1'];
+    $value2 = $_POST['value2'];
+}
+
+$result='';
+
 class Calculadora{
 
     public $value1;
@@ -28,13 +36,6 @@ public function get_dividir(){
 }
 return $this->value1 / $this->value2;
 }
-}
-
-$result = '';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $value1 = $_POST['value1'];
-    $value2 = $_POST['value2'];
 }
 
 $calculadora = new Calculadora($value1, $value2);

@@ -1,7 +1,5 @@
 <?php
 
-
-
 $dados = [
     ['m', 'joao ribeiro'],
     ['f', 'ana silva'],
